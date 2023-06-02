@@ -1,19 +1,58 @@
 // Header
-.header {
+header {
     background-color: $dark-purple;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__link {
+            line-height: 32px;
+
+            &:hover {
+                color: $eucaplyptus;
+            }
+        }
+    }
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+// Hero
+.hero {
+    position: relative;
+    text-align: center;
+    color: $white;
+    padding-bottom: calc(184px / 2);
 
-    &__link {
-        line-height: 32px;
-        border-bottom: 2px solid $eucaplyptus;
+    &__title {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 40px;
+    }
 
-        &:hover {
-            color: $eucaplyptus;
-        }
+    &__button {
+        margin-bottom: 64px;
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        max-width: 320px;
+        height: auto;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $dark-purple;
+        border-radius: 0% 0% 50% 50%;
+        transform: scaleX(2.5);
     }
 }

@@ -20,6 +20,23 @@ $davys-grey: #584d62;
 $ghost-white: #fcf8ff;
 $white: #ffffff;
 
+// Buttons
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.primary-button {
+    padding: 12px 24px;
+    background-color: $eucaplyptus;
+    display: inline-block;
+    line-height: 32px;
+    color: $dark-purple;
+    font-weight: 700;
+}
+
 // Default
 *,
 *::before,
@@ -41,18 +58,7 @@ h3 {
 }
 
 h1 {
-    font-size: 80px;
-    line-height: 80px;
-}
-
-h2 {
-    font-size: 56px;
-    line-height: 64px;
-}
-
-h3 {
-    font-size: 32px;
-    line-height: 40px;
+    margin: 0;
 }
 
 a {
@@ -60,13 +66,6 @@ a {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-button {
-    cursor: pointer;
-    border: none;
-    background: none;
-    padding: 0;
 }
 
 :focus {
@@ -77,4 +76,8 @@ header,
 section,
 footer {
     padding: 32px 16px;
+}
+
+.is-underline {
+    border-bottom: 3px solid $eucaplyptus;
 }
