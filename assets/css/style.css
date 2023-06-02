@@ -33,6 +33,7 @@ button {
 
 body {
   font-family: "Manrope", sans-serif;
+  color: #584d62;
   font-size: 16px;
   line-height: 28px;
   margin: 0;
@@ -42,9 +43,10 @@ h1,
 h2,
 h3 {
   font-family: "Fraunces 144pt", serif;
+  margin: 0;
 }
 
-h1 {
+p {
   margin: 0;
 }
 
@@ -89,6 +91,7 @@ header .nav__link:hover {
   text-align: center;
   color: #ffffff;
   padding-bottom: 92px;
+  overflow-x: clip;
 }
 .hero__title {
   font-size: 50px;
@@ -106,17 +109,79 @@ header .nav__link:hover {
   max-width: 320px;
   height: auto;
 }
-.hero::before {
+.hero::before, .hero::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+}
+.hero::before {
   z-index: -1;
   background-color: #24053e;
   border-radius: 0% 0% 50% 50%;
   transform: scaleX(2.5);
+}
+.hero::after {
+  z-index: -2;
+  background-color: #fcf8ff;
+  border-radius: 0%;
+  transform: initial;
+}
+
+.advantages {
+  position: relative;
+  padding-top: 156px;
+  padding-bottom: 71px;
+  overflow-x: clip;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.advantages .advantage {
+  margin-bottom: 40px;
+}
+.advantages .advantage__number {
+  display: inline-block;
+  font-family: "Fraunces 144pt";
+  font-size: 20px;
+  color: #24053e;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50%;
+  border: 1px solid #584d62;
+  margin-bottom: 24px;
+}
+.advantages .advantage__title {
+  font-size: 28px;
+  line-height: 36px;
+  color: #24053e;
+  margin-bottom: 16px;
+}
+.advantages .advantage:last-child {
+  margin-bottom: 0;
+}
+.advantages::before, .advantages::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.advantages::before {
+  z-index: -1;
+  background-color: #fcf8ff;
+  border-radius: 0% 0% 50% 50%;
+  transform: scaleX(2.5);
+}
+.advantages::after {
+  z-index: -2;
+  background-color: #fcf8ff;
+  border-radius: 0%;
+  transform: initial;
 }
 
 /*# sourceMappingURL=style.css.map */
