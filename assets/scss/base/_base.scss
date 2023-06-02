@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Fraunces 144pt';
+    src: url('/assets/fonts/Fraunces_144pt-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/Manrope-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', serif;
+    font-size: 16px;
+    line-height: 28px;
+}
