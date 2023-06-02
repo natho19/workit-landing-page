@@ -1,3 +1,4 @@
+// Font Face
 @font-face {
     font-family: 'Fraunces 144pt';
     src: url('/assets/fonts/Fraunces_144pt-SemiBold.ttf');
@@ -12,6 +13,14 @@
     font-weight: 400;
 }
 
+// Colors
+$dark-purple: #24053e;
+$eucaplyptus: #44ffa1;
+$davys-grey: #584d62;
+$ghost-white: #fcf8ff;
+$white: #ffffff;
+
+// Default
 *,
 *::before,
 *::after {
@@ -22,6 +31,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
     line-height: 28px;
+    margin: 0;
 }
 
 h1,
@@ -46,7 +56,7 @@ h3 {
 }
 
 a {
-    color: inherit;
+    color: $white;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -61,4 +71,10 @@ button {
 
 :focus {
     outline: none;
+}
+
+header,
+section,
+footer {
+    padding: 32px 16px;
 }

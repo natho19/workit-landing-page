@@ -1,0 +1,19 @@
+// Header
+.header {
+    background-color: $dark-purple;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__link {
+        line-height: 32px;
+        border-bottom: 2px solid $eucaplyptus;
+
+        &:hover {
+            color: $eucaplyptus;
+        }
+    }
+}
