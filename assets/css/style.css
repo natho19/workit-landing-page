@@ -10,21 +10,6 @@
   font-style: normal;
   font-weight: 400;
 }
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-.primary-button {
-  padding: 12px 24px;
-  background-color: #44ffa1;
-  display: inline-block;
-  line-height: 32px;
-  color: #24053e;
-  font-weight: 700;
-}
-
 *,
 *::before,
 *::after {
@@ -57,8 +42,53 @@ a {
   transition: all 0.3s ease;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 :focus {
   outline: none;
+}
+
+.primary-button {
+  padding: 12px 24px;
+  background-color: #44ffa1;
+  display: inline-block;
+  line-height: 32px;
+  color: #24053e;
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__image {
+  width: 281px;
+  margin: 0 31px;
+}
+.card__body {
+  margin-top: -52px;
+  padding: 32px 31px;
+  background-color: #24053e;
+  color: #ffffff;
+  text-align: center;
+}
+.card__title {
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+.card__description {
+  margin-bottom: 24px;
 }
 
 header,
@@ -95,8 +125,12 @@ header .nav__link:hover {
 }
 .hero__title {
   font-size: 50px;
-  line-height: 55px;
+  line-height: 50px;
   margin-bottom: 40px;
+}
+.hero__title strong {
+  display: inline-block;
+  line-height: 55px;
 }
 .hero__button {
   margin-bottom: 64px;
@@ -106,8 +140,7 @@ header .nav__link:hover {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  max-width: 320px;
-  height: auto;
+  width: 320px;
 }
 .hero::before, .hero::after {
   content: "";
@@ -121,13 +154,15 @@ header .nav__link:hover {
   z-index: -1;
   background-color: #24053e;
   border-radius: 0% 0% 50% 50%;
-  transform: scaleX(2.5);
 }
 .hero::after {
   z-index: -2;
   background-color: #fcf8ff;
   border-radius: 0%;
   transform: initial;
+}
+.hero::before {
+  transform: scaleX(2.5);
 }
 
 .advantages {
@@ -175,13 +210,20 @@ header .nav__link:hover {
   z-index: -1;
   background-color: #fcf8ff;
   border-radius: 0% 0% 50% 50%;
-  transform: scaleX(2.5);
 }
 .advantages::after {
   z-index: -2;
-  background-color: #fcf8ff;
+  background-color: #ffffff;
   border-radius: 0%;
   transform: initial;
+}
+.advantages::before {
+  transform: scaleX(3.5);
+}
+
+.founder {
+  padding-top: 100px;
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
