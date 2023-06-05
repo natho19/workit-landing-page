@@ -92,8 +92,7 @@ img {
 }
 
 header,
-section,
-footer {
+section {
   padding: 32px 16px;
 }
 
@@ -108,6 +107,9 @@ header .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+header .nav__logo {
+  width: 96px;
 }
 header .nav__link {
   line-height: 32px;
@@ -223,7 +225,31 @@ header .nav__link:hover {
 
 .founder {
   padding-top: 100px;
-  background-color: #ffffff;
+}
+
+.footer {
+  padding-top: 42px;
+  padding-bottom: 64px;
+}
+.footer .footer-box {
+  width: 116px;
+  height: 102px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .footer-box__logo {
+  width: 96px;
+  align-self: center;
+}
+.footer .footer-box__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-box__icons a {
+  line-height: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
