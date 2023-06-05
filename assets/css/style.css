@@ -60,10 +60,15 @@ img {
 .primary-button {
   padding: 12px 24px;
   background-color: #44ffa1;
+  border: 2px solid #44ffa1;
   display: inline-block;
   line-height: 32px;
   color: #24053e;
   font-weight: 700;
+}
+.primary-button:hover {
+  background: transparent;
+  color: #44ffa1;
 }
 
 .card {
@@ -250,6 +255,9 @@ header .nav__link:hover {
 }
 .footer .footer-box__icons a {
   line-height: 0;
+}
+.footer .footer-box__icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(4%) sepia(53%) saturate(6040%) hue-rotate(270deg) brightness(126%) contrast(103%);
 }
 
 /*# sourceMappingURL=style.css.map */

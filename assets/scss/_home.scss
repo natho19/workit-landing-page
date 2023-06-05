@@ -134,6 +134,11 @@ header {
 
             a {
                 line-height: 0;
+
+                &:hover img {
+                    filter: brightness(0) saturate(100%) invert(4%) sepia(53%) saturate(6040%)
+                        hue-rotate(270deg) brightness(126%) contrast(103%);
+                }
             }
         }
     }

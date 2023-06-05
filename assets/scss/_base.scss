@@ -99,10 +99,16 @@ img {
 .primary-button {
     padding: 12px 24px;
     background-color: $eucaplyptus;
+    border: 2px solid $eucaplyptus;
     display: inline-block;
     line-height: 32px;
     color: $dark-purple;
     font-weight: 700;
+
+    &:hover {
+        background: transparent;
+        color: #44ffa1;
+    }
 }
 
 .card {
