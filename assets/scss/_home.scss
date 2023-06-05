@@ -1,27 +1,4 @@
-// Header
-header {
-    background-color: $dark-purple;
-
-    .nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &__logo {
-            width: 96px;
-        }
-
-        &__link {
-            line-height: 32px;
-
-            &:hover {
-                color: $eucaplyptus;
-            }
-        }
-    }
-}
-
-// Hero
+/* #region : Hero */
 .hero {
     position: relative;
     text-align: center;
@@ -58,8 +35,9 @@ header {
         transform: scaleX(2.5);
     }
 }
+/* #endregion : Hero */
 
-// Advantages
+/* #region : Advantages */
 .advantages {
     position: relative;
     padding-top: calc(64px + (184px / 2));
@@ -103,43 +81,10 @@ header {
         transform: scaleX(3.5);
     }
 }
+/* #endregion : Advantages */
 
-// Founder
+/* #region : Founder */
 .founder {
     padding-top: 100px;
 }
-
-// Footer
-.footer {
-    padding-top: 42px;
-    padding-bottom: 64px;
-
-    .footer-box {
-        width: 116px;
-        height: 102px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        &__logo {
-            width: 96px;
-            align-self: center;
-        }
-
-        &__icons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            a {
-                line-height: 0;
-
-                &:hover img {
-                    filter: brightness(0) saturate(100%) invert(4%) sepia(53%) saturate(6040%)
-                        hue-rotate(270deg) brightness(126%) contrast(103%);
-                }
-            }
-        }
-    }
-}
+/* #endregion : Founder */

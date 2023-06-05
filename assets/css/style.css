@@ -1,3 +1,4 @@
+/* #region : Font Face */
 @font-face {
   font-family: "Fraunces 144pt";
   src: url("/assets/fonts/Fraunces_144pt-SemiBold.ttf");
@@ -10,6 +11,10 @@
   font-style: normal;
   font-weight: 400;
 }
+/* #endregion : Font Face */
+/* #region : Colors */
+/* #endregion : Colors */
+/* #region : Default */
 *,
 *::before,
 *::after {
@@ -57,6 +62,10 @@ img {
   outline: none;
 }
 
+/* #endregion : Default */
+/* #region : Mixins */
+/* #endregion : Mixins */
+/* #region : Components */
 .primary-button {
   padding: 12px 24px;
   background-color: #44ffa1;
@@ -96,6 +105,8 @@ img {
   margin-bottom: 24px;
 }
 
+/* #endregion : Components */
+/* #region : General */
 header,
 section {
   padding: 32px 16px;
@@ -105,6 +116,8 @@ section {
   border-bottom: 3px solid #44ffa1;
 }
 
+/* #endregion : General */
+/* #region : Header */
 header {
   background-color: #24053e;
 }
@@ -123,6 +136,38 @@ header .nav__link:hover {
   color: #44ffa1;
 }
 
+/* #endregion : Header */
+/* #region : Footer */
+.footer {
+  padding-top: 42px;
+  padding-bottom: 64px;
+}
+.footer .footer-box {
+  width: 116px;
+  height: 102px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .footer-box__logo {
+  width: 96px;
+  align-self: center;
+}
+.footer .footer-box__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-box__icons a {
+  line-height: 0;
+}
+.footer .footer-box__icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(4%) sepia(53%) saturate(6040%) hue-rotate(270deg) brightness(126%) contrast(103%);
+}
+
+/* #endregion : Advantages */
+/* #region : Hero */
 .hero {
   position: relative;
   text-align: center;
@@ -172,6 +217,8 @@ header .nav__link:hover {
   transform: scaleX(2.5);
 }
 
+/* #endregion : Hero */
+/* #region : Advantages */
 .advantages {
   position: relative;
   padding-top: 156px;
@@ -228,36 +275,12 @@ header .nav__link:hover {
   transform: scaleX(3.5);
 }
 
+/* #endregion : Advantages */
+/* #region : Founder */
 .founder {
   padding-top: 100px;
 }
 
-.footer {
-  padding-top: 42px;
-  padding-bottom: 64px;
-}
-.footer .footer-box {
-  width: 116px;
-  height: 102px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.footer .footer-box__logo {
-  width: 96px;
-  align-self: center;
-}
-.footer .footer-box__icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer .footer-box__icons a {
-  line-height: 0;
-}
-.footer .footer-box__icons a:hover img {
-  filter: brightness(0) saturate(100%) invert(4%) sepia(53%) saturate(6040%) hue-rotate(270deg) brightness(126%) contrast(103%);
-}
+/* #endregion : Founder */
 
 /*# sourceMappingURL=style.css.map */

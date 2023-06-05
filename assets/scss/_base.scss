@@ -1,4 +1,4 @@
-// Font Face
+/* #region : Font Face */
 @font-face {
     font-family: 'Fraunces 144pt';
     src: url('/assets/fonts/Fraunces_144pt-SemiBold.ttf');
@@ -12,15 +12,17 @@
     font-style: normal;
     font-weight: 400;
 }
+/* #endregion : Font Face */
 
-// Colors
+/* #region : Colors */
 $dark-purple: #24053e;
 $eucaplyptus: #44ffa1;
 $davys-grey: #584d62;
 $ghost-white: #fcf8ff;
 $white: #ffffff;
+/* #endregion : Colors */
 
-// Default
+/* #region : Default */
 *,
 *::before,
 *::after {
@@ -67,8 +69,9 @@ img {
 :focus {
     outline: none;
 }
+/* #endregion : Default */
 
-// Mixins
+/* #region : Mixins */
 @mixin curved-effect($before-color, $after-color) {
     &::before,
     &::after {
@@ -84,7 +87,6 @@ img {
         z-index: -1;
         background-color: $before-color;
         border-radius: 0% 0% 50% 50%;
-        // transform: scaleX(2.5);
     }
 
     &::after {
@@ -94,8 +96,9 @@ img {
         transform: initial;
     }
 }
+/* #endregion : Mixins */
 
-// Components
+/* #region : Components */
 .primary-button {
     padding: 12px 24px;
     background-color: $eucaplyptus;
@@ -139,8 +142,9 @@ img {
         margin-bottom: 24px;
     }
 }
+/* #endregion : Components */
 
-// General
+/* #region : General */
 header,
 section {
     padding: 32px 16px;
@@ -149,3 +153,64 @@ section {
 .is-underline {
     border-bottom: 3px solid $eucaplyptus;
 }
+/* #endregion : General */
+
+/* #region : Header */
+header {
+    background-color: $dark-purple;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__logo {
+            width: 96px;
+        }
+
+        &__link {
+            line-height: 32px;
+
+            &:hover {
+                color: $eucaplyptus;
+            }
+        }
+    }
+}
+/* #endregion : Header */
+
+/* #region : Footer */
+.footer {
+    padding-top: 42px;
+    padding-bottom: 64px;
+
+    .footer-box {
+        width: 116px;
+        height: 102px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__logo {
+            width: 96px;
+            align-self: center;
+        }
+
+        &__icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                line-height: 0;
+
+                &:hover img {
+                    filter: brightness(0) saturate(100%) invert(4%) sepia(53%) saturate(6040%)
+                        hue-rotate(270deg) brightness(126%) contrast(103%);
+                }
+            }
+        }
+    }
+}
+/* #endregion : Advantages */
