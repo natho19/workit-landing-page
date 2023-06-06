@@ -127,36 +127,33 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     @media #{$tablet} {
         flex-direction: row;
-        position: relative;
-        background-color: red;
+        align-items: flex-start;
     }
 
     &__image {
         width: 281px;
         margin: 0 31px;
+
         @media #{$tablet} {
             margin: 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
         }
     }
 
     &__body {
         margin-top: -52px;
-        padding: 32px 31px;
+        padding: 32px;
         background-color: $dark-purple;
         color: $white;
         text-align: center;
+
         @media #{$tablet} {
-            margin-top: 0;
-            position: absolute;
-            left: 178px;
-            top: calc(50% + 50px);
-            z-index: 2;
+            margin-top: 146px;
+            margin-left: -104px;
+            padding: 56px;
+            text-align: left;
         }
     }
 
@@ -164,6 +161,12 @@ img {
         font-size: 32px;
         line-height: 48px;
         margin-bottom: 16px;
+
+        @media #{$tablet} {
+            font-size: 48px;
+            line-height: 56px;
+            margin-bottom: 24px;
+        }
     }
 
     &__description {
@@ -216,6 +219,11 @@ header {
 .footer {
     padding-top: 42px;
     padding-bottom: 64px;
+
+    @media #{$tablet} {
+        padding-top: 48px;
+        padding-bottom: 120px;
+    }
 
     .footer-box {
         width: 116px;
