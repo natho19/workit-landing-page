@@ -15,6 +15,14 @@
             display: inline-block;
             line-height: 55px;
         }
+
+        @media #{$tablet} {
+            font-size: 60px;
+            line-height: 60px;
+            max-width: 575px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__button {
@@ -27,12 +35,24 @@
         left: 50%;
         transform: translate(-50%, 50%);
         width: 320px;
+
+        @media #{$tablet} {
+            width: 515px;
+        }
     }
 
     @include curved-effect($dark-purple, $ghost-white);
 
     &::before {
-        transform: scaleX(2.5);
+        transform: scaleX(2.1);
+    }
+
+    @media #{$tablet} {
+        padding-bottom: 148px;
+        background-image: url('../images/bg-pattern-1.svg'), url('../images/bg-pattern-2.svg');
+        background-repeat: no-repeat, no-repeat;
+        // background-size: 270px auto, 142px 112px;
+        background-position: -230px calc(50% - (55px)), calc(100% + 80px) calc(100% - 95px);
     }
 }
 /* #endregion : Hero */
@@ -61,6 +81,18 @@
             border-radius: 50%;
             border: 1px solid $davys-grey;
             margin-bottom: 24px;
+
+            @media #{$tablet} {
+                flex-shrink: 0;
+                margin-right: 32px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__details {
+            @media #{$tablet} {
+                text-align: left;
+            }
         }
 
         &__title {
@@ -73,12 +105,30 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        @media #{$tablet} {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 48px;
+            max-width: 573px;
+        }
     }
 
     @include curved-effect($ghost-white, $white);
 
     &::before {
         transform: scaleX(3.5);
+
+        @media #{$tablet} {
+            transform: scaleX(2.2);
+        }
+    }
+
+    @media #{$tablet} {
+        align-items: center;
+        padding-top: 195px;
+        padding-bottom: 104px;
     }
 }
 /* #endregion : Advantages */
@@ -88,5 +138,3 @@
     padding-top: 100px;
 }
 /* #endregion : Founder */
-
-/* #region : Responsive Tablet (768px) */

@@ -86,9 +86,25 @@ img {
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (min-width: 376px) {
+  .card {
+    flex-direction: row;
+    position: relative;
+    background-color: red;
+  }
+}
 .card__image {
   width: 281px;
   margin: 0 31px;
+}
+@media only screen and (min-width: 376px) {
+  .card__image {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 }
 .card__body {
   margin-top: -52px;
@@ -96,6 +112,15 @@ img {
   background-color: #24053e;
   color: #ffffff;
   text-align: center;
+}
+@media only screen and (min-width: 376px) {
+  .card__body {
+    margin-top: 0;
+    position: absolute;
+    left: 178px;
+    top: calc(50% + 50px);
+    z-index: 2;
+  }
 }
 .card__title {
   font-size: 32px;
@@ -111,6 +136,13 @@ img {
 header,
 section {
   padding: 32px 16px;
+}
+@media only screen and (min-width: 376px) {
+  header,
+  section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .is-underline {
@@ -135,11 +167,6 @@ header .nav__link {
 }
 header .nav__link:hover {
   color: #44ffa1;
-}
-@media only screen and (min-width: 376px) {
-  header {
-    background-color: red;
-  }
 }
 
 /* #endregion : Header */
@@ -190,6 +217,15 @@ header .nav__link:hover {
   display: inline-block;
   line-height: 55px;
 }
+@media only screen and (min-width: 376px) {
+  .hero__title {
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 575px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .hero__button {
   margin-bottom: 64px;
 }
@@ -199,6 +235,11 @@ header .nav__link:hover {
   left: 50%;
   transform: translate(-50%, 50%);
   width: 320px;
+}
+@media only screen and (min-width: 376px) {
+  .hero__image {
+    width: 515px;
+  }
 }
 .hero::before, .hero::after {
   content: "";
@@ -220,7 +261,15 @@ header .nav__link:hover {
   transform: initial;
 }
 .hero::before {
-  transform: scaleX(2.5);
+  transform: scaleX(2.1);
+}
+@media only screen and (min-width: 376px) {
+  .hero {
+    padding-bottom: 148px;
+    background-image: url("../images/bg-pattern-1.svg"), url("../images/bg-pattern-2.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -230px calc(50% - 55px), calc(100% + 80px) calc(100% - 95px);
+  }
 }
 
 /* #endregion : Hero */
@@ -249,6 +298,18 @@ header .nav__link:hover {
   border: 1px solid #584d62;
   margin-bottom: 24px;
 }
+@media only screen and (min-width: 376px) {
+  .advantages .advantage__number {
+    flex-shrink: 0;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 376px) {
+  .advantages .advantage__details {
+    text-align: left;
+  }
+}
 .advantages .advantage__title {
   font-size: 28px;
   line-height: 36px;
@@ -257,6 +318,15 @@ header .nav__link:hover {
 }
 .advantages .advantage:last-child {
   margin-bottom: 0;
+}
+@media only screen and (min-width: 376px) {
+  .advantages .advantage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 48px;
+    max-width: 573px;
+  }
 }
 .advantages::before, .advantages::after {
   content: "";
@@ -280,6 +350,18 @@ header .nav__link:hover {
 .advantages::before {
   transform: scaleX(3.5);
 }
+@media only screen and (min-width: 376px) {
+  .advantages::before {
+    transform: scaleX(2.2);
+  }
+}
+@media only screen and (min-width: 376px) {
+  .advantages {
+    align-items: center;
+    padding-top: 195px;
+    padding-bottom: 104px;
+  }
+}
 
 /* #endregion : Advantages */
 /* #region : Founder */
@@ -288,6 +370,5 @@ header .nav__link:hover {
 }
 
 /* #endregion : Founder */
-/* #region : Responsive Tablet (768px) */
 
 /*# sourceMappingURL=style.css.map */
