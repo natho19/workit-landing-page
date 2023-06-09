@@ -29,6 +29,12 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
 
 h1,
 h2,
@@ -145,6 +151,12 @@ section {
     padding-right: 40px;
   }
 }
+@media only screen and (min-width: 769px) {
+  header,
+  section {
+    padding: 55px 165px;
+  }
+}
 
 .is-underline {
   border-bottom: 3px solid #44ffa1;
@@ -237,6 +249,11 @@ header .nav__link:hover {
 .hero::before {
   transform: scaleX(2.1);
 }
+@media only screen and (min-width: 769px) {
+  .hero::before {
+    transform: scaleX(1.5);
+  }
+}
 @media only screen and (min-width: 376px) {
   .hero {
     padding-bottom: 148px;
@@ -245,14 +262,16 @@ header .nav__link:hover {
     background-position: -230px calc(50% - 55px), calc(100% + 80px) calc(100% - 95px);
   }
 }
+@media only screen and (min-width: 769px) {
+  .hero {
+    padding-bottom: 260px;
+    background-position: -135px calc(50% - 55px), calc(100% + 40px) 60%;
+  }
+}
 .hero__title {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 40px;
-}
-.hero__title strong {
-  display: inline-block;
-  line-height: 55px;
 }
 @media only screen and (min-width: 376px) {
   .hero__title {
@@ -263,8 +282,39 @@ header .nav__link:hover {
     margin-right: auto;
   }
 }
+@media only screen and (min-width: 769px) {
+  .hero__title {
+    font-size: 80px;
+    line-height: 80px;
+    max-width: 635px;
+  }
+}
+.hero__title strong {
+  display: inline-block;
+  line-height: 55px;
+}
+@media only screen and (min-width: 376px) {
+  .hero__title strong {
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .hero__title strong {
+    line-height: 80px;
+  }
+}
 .hero__button {
   margin-bottom: 64px;
+}
+@media only screen and (min-width: 376px) {
+  .hero__button {
+    margin-bottom: 55px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .hero__button {
+    margin-bottom: 50px;
+  }
 }
 .hero__image {
   position: absolute;
@@ -276,6 +326,12 @@ header .nav__link:hover {
 @media only screen and (min-width: 376px) {
   .hero__image {
     width: 515px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .hero__image {
+    width: 767px;
+    bottom: 40px;
   }
 }
 

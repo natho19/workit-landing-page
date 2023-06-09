@@ -3,13 +3,17 @@
     position: relative;
     text-align: center;
     color: $white;
-    padding-bottom: calc(184px / 2);
+    padding-bottom: 92px;
     overflow-x: clip;
 
     @include curved-effect($dark-purple, $ghost-white);
 
     &::before {
         transform: scaleX(2.1);
+
+        @media #{$desktop} {
+            transform: scaleX(1.5);
+        }
     }
 
     @media #{$tablet} {
@@ -19,15 +23,15 @@
         background-position: -230px calc(50% - (55px)), calc(100% + 80px) calc(100% - 95px);
     }
 
+    @media #{$desktop} {
+        padding-bottom: 260px;
+        background-position: -135px calc(50% - (55px)), calc(100% + 40px) 60%;
+    }
+
     &__title {
         font-size: 50px;
         line-height: 50px;
         margin-bottom: 40px;
-
-        strong {
-            display: inline-block;
-            line-height: 55px;
-        }
 
         @media #{$tablet} {
             font-size: 60px;
@@ -36,10 +40,37 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        @media #{$desktop} {
+            font-size: 80px;
+            line-height: 80px;
+            max-width: 635px;
+        }
+
+        strong {
+            display: inline-block;
+            line-height: 55px;
+
+            @media #{$tablet} {
+                line-height: 60px;
+            }
+
+            @media #{$desktop} {
+                line-height: 80px;
+            }
+        }
     }
 
     &__button {
         margin-bottom: 64px;
+
+        @media #{$tablet} {
+            margin-bottom: 55px;
+        }
+
+        @media #{$desktop} {
+            margin-bottom: 50px;
+        }
     }
 
     &__image {
@@ -51,6 +82,11 @@
 
         @media #{$tablet} {
             width: 515px;
+        }
+
+        @media #{$desktop} {
+            width: 767px;
+            bottom: 40px;
         }
     }
 }

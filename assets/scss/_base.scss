@@ -44,6 +44,11 @@ body {
     line-height: 28px;
     max-width: 1440px;
     margin: 0 auto;
+
+    @media #{$desktop} {
+        font-size: 18px;
+        line-height: 32px;
+    }
 }
 
 h1,
@@ -183,6 +188,10 @@ section {
     @media #{$tablet} {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    @media #{$desktop} {
+        padding: 55px 165px;
     }
 }
 
