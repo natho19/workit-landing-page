@@ -373,6 +373,11 @@ header .nav__link:hover {
     transform: scaleX(2.2);
   }
 }
+@media only screen and (min-width: 769px) {
+  .advantages::before {
+    transform: scaleX(1.5);
+  }
+}
 @media only screen and (min-width: 376px) {
   .advantages {
     align-items: center;
@@ -380,8 +385,34 @@ header .nav__link:hover {
     padding-bottom: 104px;
   }
 }
+@media only screen and (min-width: 769px) {
+  .advantages {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 250px;
+    padding-bottom: 170px;
+  }
+}
 .advantages .advantage {
   margin-bottom: 40px;
+}
+.advantages .advantage:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 376px) {
+  .advantages .advantage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 48px;
+    max-width: 573px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .advantages .advantage {
+    flex-direction: column;
+    padding: 0 14px;
+  }
 }
 .advantages .advantage__number {
   display: inline-block;
@@ -402,9 +433,24 @@ header .nav__link:hover {
     margin-bottom: 0;
   }
 }
+@media only screen and (min-width: 769px) {
+  .advantages .advantage__number {
+    font-size: 24px;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    margin-right: 0;
+    margin-bottom: 56px;
+  }
+}
 @media only screen and (min-width: 376px) {
   .advantages .advantage__details {
     text-align: left;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .advantages .advantage__details {
+    text-align: center;
   }
 }
 .advantages .advantage__title {
@@ -413,16 +459,11 @@ header .nav__link:hover {
   color: #24053e;
   margin-bottom: 16px;
 }
-.advantages .advantage:last-child {
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 376px) {
-  .advantages .advantage {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 48px;
-    max-width: 573px;
+@media only screen and (min-width: 769px) {
+  .advantages .advantage__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 28px;
   }
 }
 
