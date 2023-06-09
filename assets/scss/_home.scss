@@ -6,6 +6,19 @@
     padding-bottom: calc(184px / 2);
     overflow-x: clip;
 
+    @include curved-effect($dark-purple, $ghost-white);
+
+    &::before {
+        transform: scaleX(2.1);
+    }
+
+    @media #{$tablet} {
+        padding-bottom: 148px;
+        background-image: url('../images/bg-pattern-1.svg'), url('../images/bg-pattern-2.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: -230px calc(50% - (55px)), calc(100% + 80px) calc(100% - 95px);
+    }
+
     &__title {
         font-size: 50px;
         line-height: 50px;
@@ -40,19 +53,6 @@
             width: 515px;
         }
     }
-
-    @include curved-effect($dark-purple, $ghost-white);
-
-    &::before {
-        transform: scaleX(2.1);
-    }
-
-    @media #{$tablet} {
-        padding-bottom: 148px;
-        background-image: url('../images/bg-pattern-1.svg'), url('../images/bg-pattern-2.svg');
-        background-repeat: no-repeat, no-repeat;
-        background-position: -230px calc(50% - (55px)), calc(100% + 80px) calc(100% - 95px);
-    }
 }
 /* #endregion : Hero */
 
@@ -65,6 +65,22 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    @include curved-effect($ghost-white, $white);
+
+    &::before {
+        transform: scaleX(3.5);
+
+        @media #{$tablet} {
+            transform: scaleX(2.2);
+        }
+    }
+
+    @media #{$tablet} {
+        align-items: center;
+        padding-top: 195px;
+        padding-bottom: 104px;
+    }
 
     .advantage {
         margin-bottom: 40px;
@@ -112,22 +128,6 @@
             margin-bottom: 48px;
             max-width: 573px;
         }
-    }
-
-    @include curved-effect($ghost-white, $white);
-
-    &::before {
-        transform: scaleX(3.5);
-
-        @media #{$tablet} {
-            transform: scaleX(2.2);
-        }
-    }
-
-    @media #{$tablet} {
-        align-items: center;
-        padding-top: 195px;
-        padding-bottom: 104px;
     }
 }
 /* #endregion : Advantages */
