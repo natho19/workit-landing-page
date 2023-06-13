@@ -1,84 +1,5 @@
-/* #region : Font Face */
-@font-face {
-  font-family: "Fraunces 144pt";
-  src: url("/assets/fonts/Fraunces_144pt-SemiBold.ttf");
-  font-style: normal;
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url("/assets/fonts/Manrope-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url("/assets/fonts/Manrope-Bold.ttf");
-  font-style: normal;
-  font-weight: 700;
-}
-/* #endregion : Font Face */
-/* #region : Variables */
-/* #endregion : Variables */
-/* #region : Default */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Manrope", sans-serif;
-  color: #24053e;
-  font-size: 16px;
-  line-height: 28px;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-@media only screen and (min-width: 1025px) {
-  body {
-    font-size: 18px;
-    line-height: 32px;
-  }
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Fraunces 144pt", serif;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-:focus {
-  outline: none;
-}
-
-/* #endregion : Default */
 /* #region : Mixins */
 /* #endregion : Mixins */
-/* #region : Components */
 .primary-button {
   padding: 12px 24px;
   background-color: #44ffa1;
@@ -172,8 +93,78 @@ img {
   }
 }
 
-/* #endregion : Components */
-/* #region : General */
+@font-face {
+  font-family: "Fraunces 144pt";
+  src: url("/assets/fonts/Fraunces_144pt-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/Manrope-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/Manrope-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: #24053e;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces 144pt", serif;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus {
+  outline: none;
+}
+
 header,
 section {
   padding: 32px 16px;
@@ -203,8 +194,6 @@ section {
   border-bottom: 3px solid #44ffa1;
 }
 
-/* #endregion : General */
-/* #region : Header */
 header {
   background-color: #24053e;
 }
@@ -223,24 +212,22 @@ header .nav__link:hover {
   color: #44ffa1;
 }
 
-/* #endregion : Header */
-/* #region : Footer */
-.footer {
+footer {
   padding-top: 42px;
   padding-bottom: 64px;
 }
 @media only screen and (min-width: 426px) {
-  .footer {
+  footer {
     padding-top: 48px;
     padding-bottom: 120px;
   }
 }
 @media only screen and (min-width: 1025px) {
-  .footer {
+  footer {
     padding-top: 60px;
   }
 }
-.footer .footer-box {
+footer .footer-box {
   width: 116px;
   height: 102px;
   margin: 0 auto;
@@ -248,24 +235,22 @@ header .nav__link:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-.footer .footer-box__logo {
+footer .footer-box__logo {
   width: 96px;
   align-self: center;
 }
-.footer .footer-box__icons {
+footer .footer-box__icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer .footer-box__icons a {
+footer .footer-box__icons a {
   line-height: 0;
 }
-.footer .footer-box__icons a:hover img {
+footer .footer-box__icons a:hover img {
   filter: brightness(0) saturate(100%) invert(4%) sepia(53%) saturate(6040%) hue-rotate(270deg) brightness(126%) contrast(103%);
 }
 
-/* #endregion : Advantages */
-/* #region : Hero */
 .hero {
   position: relative;
   text-align: center;
@@ -381,8 +366,6 @@ header .nav__link:hover {
   }
 }
 
-/* #endregion : Hero */
-/* #region : Advantages */
 .advantages {
   position: relative;
   padding-top: 156px;
@@ -516,8 +499,6 @@ header .nav__link:hover {
   }
 }
 
-/* #endregion : Advantages */
-/* #region : Founder */
 .founder {
   padding-top: 100px;
   position: relative;
@@ -544,7 +525,5 @@ header .nav__link:hover {
     right: 285px;
   }
 }
-
-/* #endregion : Founder */
 
 /*# sourceMappingURL=style.css.map */
