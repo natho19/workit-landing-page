@@ -253,6 +253,10 @@ header {
         padding-bottom: 120px;
     }
 
+    @media #{$desktop} {
+        padding-top: 60px;
+    }
+
     .footer-box {
         width: 116px;
         height: 102px;
