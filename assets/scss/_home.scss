@@ -208,6 +208,10 @@
     padding-top: 100px;
     position: relative;
 
+    @media #{$desktop} {
+        padding-top: 110px;
+    }
+
     &__background {
         display: none;
 
@@ -216,6 +220,11 @@
             position: absolute;
             bottom: -70px;
             right: 45px;
+        }
+
+        @media #{$desktop} {
+            bottom: -5px;
+            right: 285px;
         }
     }
 }

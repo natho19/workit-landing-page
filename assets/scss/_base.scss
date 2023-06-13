@@ -145,6 +145,10 @@ img {
         @media #{$tablet} {
             margin: 0;
         }
+
+        @media #{$desktop} {
+            width: 477px;
+        }
     }
 
     &__body {
@@ -160,6 +164,12 @@ img {
             padding: 56px;
             text-align: left;
         }
+
+        @media #{$tablet} {
+            margin-top: 160px;
+            margin-left: -100px;
+            padding: 64px;
+        }
     }
 
     &__title {
@@ -172,10 +182,19 @@ img {
             line-height: 56px;
             margin-bottom: 24px;
         }
+
+        @media #{$desktop} {
+            font-size: 56px;
+            line-height: 64px;
+        }
     }
 
     &__description {
         margin-bottom: 24px;
+
+        @media #{$desktop} {
+            margin-bottom: 32px;
+        }
     }
 }
 /* #endregion : Components */
