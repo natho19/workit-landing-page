@@ -35,7 +35,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   body {
     font-size: 18px;
     line-height: 32px;
@@ -98,7 +98,7 @@ img {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 569px) {
   .card {
     flex-direction: row;
     align-items: flex-start;
@@ -108,12 +108,17 @@ img {
   width: 281px;
   margin: 0 31px;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 569px) {
   .card__image {
     margin: 0;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
+  .card__image {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 1201px) {
   .card__image {
     width: 477px;
   }
@@ -125,7 +130,7 @@ img {
   color: #ffffff;
   text-align: center;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 569px) {
   .card__body {
     margin-top: 146px;
     margin-left: -104px;
@@ -133,7 +138,7 @@ img {
     text-align: left;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .card__body {
     margin-top: 160px;
     margin-left: -100px;
@@ -145,14 +150,14 @@ img {
   line-height: 48px;
   margin-bottom: 16px;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 569px) {
   .card__title {
     font-size: 48px;
     line-height: 56px;
     margin-bottom: 24px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .card__title {
     font-size: 56px;
     line-height: 64px;
@@ -161,7 +166,7 @@ img {
 .card__description {
   margin-bottom: 24px;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .card__description {
     margin-bottom: 32px;
   }
@@ -173,7 +178,7 @@ header,
 section {
   padding: 32px 16px;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   header,
   section {
     padding-left: 40px;
@@ -181,6 +186,13 @@ section {
   }
 }
 @media only screen and (min-width: 769px) {
+  header,
+  section {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media only screen and (min-width: 1025px) {
   header,
   section {
     padding: 55px 165px;
@@ -217,13 +229,13 @@ header .nav__link:hover {
   padding-top: 42px;
   padding-bottom: 64px;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .footer {
     padding-top: 48px;
     padding-bottom: 120px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .footer {
     padding-top: 60px;
   }
@@ -283,12 +295,12 @@ header .nav__link:hover {
 .hero::before {
   transform: scaleX(2.1);
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .hero::before {
     transform: scaleX(1.5);
   }
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .hero {
     padding-bottom: 148px;
     background-image: url("../images/bg-pattern-1.svg"), url("../images/bg-pattern-2.svg");
@@ -296,7 +308,7 @@ header .nav__link:hover {
     background-position: -230px calc(50% - 55px), calc(100% + 100px) calc(100% - 95px);
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .hero {
     padding-bottom: 260px;
     background-position: -135px top, calc(100% + 40px) center;
@@ -307,7 +319,7 @@ header .nav__link:hover {
   line-height: 50px;
   margin-bottom: 40px;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .hero__title {
     font-size: 60px;
     line-height: 60px;
@@ -316,7 +328,7 @@ header .nav__link:hover {
     margin-right: auto;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .hero__title {
     font-size: 80px;
     line-height: 80px;
@@ -327,12 +339,12 @@ header .nav__link:hover {
   display: inline-block;
   line-height: 55px;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .hero__title strong {
     line-height: 60px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .hero__title strong {
     line-height: 80px;
   }
@@ -340,12 +352,12 @@ header .nav__link:hover {
 .hero__button {
   margin-bottom: 64px;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .hero__button {
     margin-bottom: 55px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .hero__button {
     margin-bottom: 50px;
   }
@@ -357,12 +369,12 @@ header .nav__link:hover {
   transform: translate(-50%, 50%);
   width: 320px;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .hero__image {
     width: 515px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .hero__image {
     width: 767px;
     bottom: 40px;
@@ -402,29 +414,33 @@ header .nav__link:hover {
 .advantages::before {
   transform: scaleX(3.5);
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .advantages::before {
     transform: scaleX(2.2);
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .advantages::before {
     transform: scaleX(1.5);
   }
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .advantages {
     align-items: center;
     padding-top: 195px;
     padding-bottom: 104px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
+  .advantages {
+    padding-top: 250px;
+    padding-bottom: 170px;
+  }
+}
+@media only screen and (min-width: 1201px) {
   .advantages {
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 250px;
-    padding-bottom: 170px;
   }
 }
 .advantages .advantage {
@@ -433,7 +449,7 @@ header .nav__link:hover {
 .advantages .advantage:last-child {
   margin-bottom: 0;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .advantages .advantage {
     display: flex;
     flex-direction: row;
@@ -442,7 +458,7 @@ header .nav__link:hover {
     max-width: 573px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .advantages .advantage {
     flex-direction: column;
     padding: 0 14px;
@@ -459,14 +475,14 @@ header .nav__link:hover {
   border: 1px solid #584d62;
   margin-bottom: 24px;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .advantages .advantage__number {
     flex-shrink: 0;
     margin-right: 32px;
     margin-bottom: 0;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .advantages .advantage__number {
     font-size: 24px;
     width: 56px;
@@ -476,12 +492,12 @@ header .nav__link:hover {
     margin-bottom: 56px;
   }
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .advantages .advantage__details {
     text-align: left;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .advantages .advantage__details {
     text-align: center;
   }
@@ -492,7 +508,7 @@ header .nav__link:hover {
   color: #24053e;
   margin-bottom: 16px;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .advantages .advantage__title {
     font-size: 32px;
     line-height: 40px;
@@ -506,7 +522,7 @@ header .nav__link:hover {
   padding-top: 100px;
   position: relative;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .founder {
     padding-top: 110px;
   }
@@ -514,7 +530,7 @@ header .nav__link:hover {
 .founder__background {
   display: none;
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 426px) {
   .founder__background {
     display: block;
     position: absolute;
@@ -522,7 +538,7 @@ header .nav__link:hover {
     right: 45px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1025px) {
   .founder__background {
     bottom: -5px;
     right: 285px;

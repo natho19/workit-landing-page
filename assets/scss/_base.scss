@@ -30,11 +30,17 @@ $ghost-white: #fcf8ff;
 $white: #ffffff;
 
 // Responsive
-$small: 376px !default;
+$small-l: 426px !default;
+$small-xl: 569px !default;
 $medium: 769px !default;
+$large: 1025px !default;
+$xlarge: 1201px !default;
 
-$tablet: 'only screen and (min-width: #{$small})';
+$tablet: 'only screen and (min-width: #{$small-l})';
+$tablet-xl: 'only screen and (min-width: #{$small-xl})';
 $desktop: 'only screen and (min-width: #{$medium})';
+$desktop-l: 'only screen and (min-width: #{$large})';
+$desktop-xl: 'only screen and (min-width: #{$xlarge})';
 /* #endregion : Variables */
 
 /* #region : Default */
@@ -52,7 +58,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 
-    @media #{$desktop} {
+    @media #{$desktop-l} {
         font-size: 18px;
         line-height: 32px;
     }
@@ -140,7 +146,7 @@ img {
     flex-direction: column;
     align-items: center;
 
-    @media #{$tablet} {
+    @media #{$tablet-xl} {
         flex-direction: row;
         align-items: flex-start;
     }
@@ -149,11 +155,15 @@ img {
         width: 281px;
         margin: 0 31px;
 
-        @media #{$tablet} {
+        @media #{$tablet-xl} {
             margin: 0;
         }
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
+            width: 300px;
+        }
+
+        @media #{$desktop-xl} {
             width: 477px;
         }
     }
@@ -165,14 +175,14 @@ img {
         color: $white;
         text-align: center;
 
-        @media #{$tablet} {
+        @media #{$tablet-xl} {
             margin-top: 146px;
             margin-left: -104px;
             padding: 56px;
             text-align: left;
         }
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             margin-top: 160px;
             margin-left: -100px;
             padding: 64px;
@@ -184,13 +194,13 @@ img {
         line-height: 48px;
         margin-bottom: 16px;
 
-        @media #{$tablet} {
+        @media #{$tablet-xl} {
             font-size: 48px;
             line-height: 56px;
             margin-bottom: 24px;
         }
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             font-size: 56px;
             line-height: 64px;
         }
@@ -199,7 +209,7 @@ img {
     &__description {
         margin-bottom: 24px;
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             margin-bottom: 32px;
         }
     }
@@ -217,6 +227,11 @@ section {
     }
 
     @media #{$desktop} {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    @media #{$desktop-l} {
         padding: 55px 165px;
     }
 }
@@ -260,7 +275,7 @@ header {
         padding-bottom: 120px;
     }
 
-    @media #{$desktop} {
+    @media #{$desktop-l} {
         padding-top: 60px;
     }
 

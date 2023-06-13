@@ -11,7 +11,7 @@
     &::before {
         transform: scaleX(2.1);
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             transform: scaleX(1.5);
         }
     }
@@ -23,7 +23,7 @@
         background-position: -230px calc(50% - 55px), calc(100% + 100px) calc(100% - 95px);
     }
 
-    @media #{$desktop} {
+    @media #{$desktop-l} {
         padding-bottom: 260px;
         background-position: -135px top, calc(100% + 40px) center;
     }
@@ -41,7 +41,7 @@
             margin-right: auto;
         }
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             font-size: 80px;
             line-height: 80px;
             max-width: 635px;
@@ -55,7 +55,7 @@
                 line-height: 60px;
             }
 
-            @media #{$desktop} {
+            @media #{$desktop-l} {
                 line-height: 80px;
             }
         }
@@ -68,7 +68,7 @@
             margin-bottom: 55px;
         }
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             margin-bottom: 50px;
         }
     }
@@ -84,7 +84,7 @@
             width: 515px;
         }
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             width: 767px;
             bottom: 40px;
         }
@@ -111,7 +111,7 @@
             transform: scaleX(2.2);
         }
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             transform: scaleX(1.5);
         }
     }
@@ -122,11 +122,14 @@
         padding-bottom: 104px;
     }
 
-    @media #{$desktop} {
-        flex-direction: row;
-        align-items: flex-start;
+    @media #{$desktop-l} {
         padding-top: 250px;
         padding-bottom: 170px;
+    }
+
+    @media #{$desktop-xl} {
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     .advantage {
@@ -144,7 +147,7 @@
             max-width: 573px;
         }
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             flex-direction: column;
             padding: 0 14px;
         }
@@ -166,7 +169,7 @@
                 margin-bottom: 0;
             }
 
-            @media #{$desktop} {
+            @media #{$desktop-l} {
                 font-size: 24px;
                 width: 56px;
                 height: 56px;
@@ -181,7 +184,7 @@
                 text-align: left;
             }
 
-            @media #{$desktop} {
+            @media #{$desktop-l} {
                 text-align: center;
             }
         }
@@ -192,7 +195,7 @@
             color: $dark-purple;
             margin-bottom: 16px;
 
-            @media #{$desktop} {
+            @media #{$desktop-l} {
                 font-size: 32px;
                 line-height: 40px;
                 margin-bottom: 28px;
@@ -207,7 +210,7 @@
     padding-top: 100px;
     position: relative;
 
-    @media #{$desktop} {
+    @media #{$desktop-l} {
         padding-top: 110px;
     }
 
@@ -221,7 +224,7 @@
             right: 45px;
         }
 
-        @media #{$desktop} {
+        @media #{$desktop-l} {
             bottom: -5px;
             right: 285px;
         }
