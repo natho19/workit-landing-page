@@ -11,6 +11,12 @@
   font-style: normal;
   font-weight: 400;
 }
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/Manrope-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
 /* #endregion : Font Face */
 /* #region : Variables */
 /* #endregion : Variables */
@@ -23,7 +29,7 @@
 
 body {
   font-family: "Manrope", sans-serif;
-  color: #584d62;
+  color: #24053e;
   font-size: 16px;
   line-height: 28px;
   max-width: 1440px;
@@ -127,7 +133,7 @@ img {
     text-align: left;
   }
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 769px) {
   .card__body {
     margin-top: 160px;
     margin-left: -100px;
@@ -287,13 +293,13 @@ header .nav__link:hover {
     padding-bottom: 148px;
     background-image: url("../images/bg-pattern-1.svg"), url("../images/bg-pattern-2.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position: -230px calc(50% - 55px), calc(100% + 80px) calc(100% - 95px);
+    background-position: -230px calc(50% - 55px), calc(100% + 100px) calc(100% - 95px);
   }
 }
 @media only screen and (min-width: 769px) {
   .hero {
     padding-bottom: 260px;
-    background-position: -135px calc(50% - 55px), calc(100% + 40px) 60%;
+    background-position: -135px top, calc(100% + 40px) center;
   }
 }
 .hero__title {
@@ -446,7 +452,6 @@ header .nav__link:hover {
   display: inline-block;
   font-family: "Fraunces 144pt";
   font-size: 20px;
-  color: #24053e;
   width: 48px;
   height: 48px;
   line-height: 48px;

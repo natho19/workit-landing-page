@@ -12,6 +12,13 @@
     font-style: normal;
     font-weight: 400;
 }
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/Manrope-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
 /* #endregion : Font Face */
 
 /* #region : Variables */
@@ -39,7 +46,7 @@ $desktop: 'only screen and (min-width: #{$medium})';
 
 body {
     font-family: 'Manrope', sans-serif;
-    color: $davys-grey;
+    color: $dark-purple;
     font-size: 16px;
     line-height: 28px;
     max-width: 1440px;
@@ -165,7 +172,7 @@ img {
             text-align: left;
         }
 
-        @media #{$tablet} {
+        @media #{$desktop} {
             margin-top: 160px;
             margin-left: -100px;
             padding: 64px;

@@ -20,12 +20,12 @@
         padding-bottom: 148px;
         background-image: url('../images/bg-pattern-1.svg'), url('../images/bg-pattern-2.svg');
         background-repeat: no-repeat, no-repeat;
-        background-position: -230px calc(50% - (55px)), calc(100% + 80px) calc(100% - 95px);
+        background-position: -230px calc(50% - 55px), calc(100% + 100px) calc(100% - 95px);
     }
 
     @media #{$desktop} {
         padding-bottom: 260px;
-        background-position: -135px calc(50% - (55px)), calc(100% + 40px) 60%;
+        background-position: -135px top, calc(100% + 40px) center;
     }
 
     &__title {
@@ -153,7 +153,6 @@
             display: inline-block;
             font-family: 'Fraunces 144pt';
             font-size: 20px;
-            color: $dark-purple;
             width: 48px;
             height: 48px;
             line-height: 48px;
